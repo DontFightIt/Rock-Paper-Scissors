@@ -5,23 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rock Paper Scissor App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>Rock Paper Scissors</header>
-  <div class="scoreboard">
+
+
+  <header><h1>Rock Paper Scissors</h1></header>
+  <div class="score-board">
     <div id='user-label' class="badge">User</div> 
-    <div iid ='comp-label' class="badge">Comp</div>
+    <div id ='comp-label' class="badge">Comp</div>
     <span id= 'user-score'>0</span> : <span id= 'computer score'>0</span>
   </div>
 
   <div class="result">
-    <p>Paper Covers Rock, You Win</p>
-  </div>
-  <p>Test for GitBash 2</p>
-  <div class="choices">
+    <p>Paper Covers Rock. You Win!</p>
+  </div> 
+
+  <div class="choices" id='r'>
     <div class="choice">
       <img src="" alt="rock">
     </div>
+    <div class="choice" id = 'p'>
+      <img src="" alt="paper">
+    </div>
+    <div class="choice" id = 's'>
+      <img src="" alt="scissors">
+    </div>
   </div>
+
+<p id= "action-message">Make Your Move.</p>
+
+
 </body>
-</html
+</html>
