@@ -13,13 +13,10 @@ const scissors_div = document.getElementById("s");
 rock_div.addEventListener('click', function() {
   console.log("hey you clicked rock"); 
 })
-
 paper_div.addEventListener('click', function() {
   console.log("hey you clicked paper"); 
 })
-
-
 scissors_div.addEventListener('click', function() {
   console.log("hey you clicked scissors"); 
-})
+});
 
