@@ -64,16 +64,28 @@ header > h1{
 .choice{ 
   display: inline-block;
   border: 4px Solid White; 
-  border-radius: 50%; 
+  border-radius: 50%;  display: inline-block; 
+  vertical-align: middle;
   padding: 10px; 
   margin: 0 20px; 
   transition: all .3s; 
+  
 }
-
 .choice:hover{ 
-  background-color: rgb(45, 47, 51);
+  background-color: rgb(85, 90, 100);
   cursor: pointer; 
   padding: 1.25em; 
+}
+
+i{ 
+  color: white; 
+  font-size: 2em;
+  transition: all .3s;
+
+}
+
+i:hover{ 
+  font-size: 5em;
 }
 
 
