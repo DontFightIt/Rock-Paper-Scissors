@@ -1,5 +1,5 @@
-const userScore = 0; 
-const compScore = 0; 
+let userScore = 0; 
+let compScore = 0; 
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("comp-score"); 
 const scoreBoard_div = document.querySelector(".score-board"); 
@@ -15,27 +15,42 @@ function getComputerChoice(){
   return choices[randomNumber];
 }
 
+function win(userChoice, computerChoice) { 
+  userScore++;
+  userScore_span.innerHTML = userScore; 
+  compScore_span.innerHTML = compScore; 
+
+}
+function lose() { 
+
+}
+function draw() { 
+  console.log("DRAW.")
+}
+
+
+
+
 function game(userChoice) {
   const computerChoice = getComputerChoice(); 
   switch (userChoice + computerChoice) { 
     case "rs":
     case "pr":
-    case "sp": 
-      console.log("USER WINS.");
+    case "sp":
+      win(); 
       break; 
     case "rp":
     case "ps":
     case "sr":
-      console.log("USER LOSES.");
+      lose();
       break;
     case "rr":
     case "pp":
     case "ss":
-      console.log("It's a draw.");
+      draw();
       break;
   }
 }
-
 
 
 function main(){ 
