@@ -23,6 +23,7 @@ function convertToWord(letter){
 }
 
 
+
 function win(userChoice, computerChoice) { 
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
