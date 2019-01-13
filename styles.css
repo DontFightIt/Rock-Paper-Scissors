@@ -71,22 +71,57 @@ header > h1{
   transition: all .3s; 
   
 }
-.choice:hover{ 
+.choice:hover { 
   background-color: rgb(85, 90, 100);
   cursor: pointer; 
   padding: 1.25em; 
 }
 
-i{ 
+i { 
   color: white; 
   font-size: 2em;
   transform: translate(-2.5px);
   transition: all .3s;
 }
 
-i:hover{ 
+i:hover { 
   font-size: 5em;
 }
+
+
+.green-glow { 
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+  background: #9cd19c
+}
+.green-glow:hover { 
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+  background: #9cd19c
+}
+
+.red-glow { 
+  border: 4px solid #fc121b; 
+  box-shadow: 0 0 10px #d01115; 
+  background:#d36868;
+}
+.red-glow:hover { 
+  border: 4px solid #fc121b; 
+  box-shadow: 0 0 10px #d01115; 
+  background:#d36868;
+}
+
+.gray-glow { 
+  border: 4px solid #464646;
+  box-shadow: 0 0 10px #25292b; 
+  background: #373a42
+}
+.gray-glow:hover { 
+  border: 4px solid #464646;
+  box-shadow: 0 0 10px #25292b; 
+  background: #373a42
+}
+
 
 
 #action-message{ 
