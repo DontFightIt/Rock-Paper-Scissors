@@ -34,7 +34,7 @@ function win(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You beat Me!` 
   actionMessage_p.innerHTML = `Make Your Move.`
   userChoice_div.classList.add("green-glow");
-  setTimeout(() => userChoice_div.classList.remove("green-glow"), 750);
+  setTimeout(() => userChoice_div.classList.remove("green-glow"), 2000);
 }
 
 function lose(userChoice, computerChoice) { 
@@ -47,7 +47,7 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. I beat you.`
   actionMessage_p.innerHTML = `Try Again...`
   userChoice_div.classList.add("red-glow");
-  setTimeout(() => userChoice_div.classList.remove("red-glow"), 750);
+  setTimeout(() => userChoice_div.classList.remove("red-glow"), 2000);
 }
 
 function draw(userChoice, computerChoice){ 
@@ -55,7 +55,7 @@ function draw(userChoice, computerChoice){
   result_p.innerHTML = `It's a Draw....`
   actionMessage_p.innerHTML = `Make The Next Move...`
   userChoice_div.classList.add("gray-glow");
-  setTimeout(() => userChoice_div.classList.remove("gray-glow"), 750); 
+  setTimeout(() => userChoice_div.classList.remove("gray-glow"), 2000); 
 }
 
 
